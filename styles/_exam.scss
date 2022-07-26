@@ -1,0 +1,41 @@
+.exam {
+    .instructionTitle {
+        color: $darkGrey;
+        font-weight: 600;
+    }
+
+    .instructions {
+        font-size: 14px;
+        color: $courseNavigationColor;
+    }
+
+    .conversation {
+        @media (min-width: $xl) {
+            min-height: 450px;
+        }
+
+    }
+    .timeLeft{
+        color: $red !important;
+    }
+    .quizHeader{
+        border-bottom: none !important;
+    }
+    .question{
+        color: $darkGrey;
+        padding: 13px 11px;
+    }
+    .examTitle{
+        color: $darkGrey;
+        margin-bottom: 33px;
+        h3{
+            font-size: 18px;
+        }
+    }
+    .ModuleList{
+        padding-bottom: 15px !important;
+    }
+    .greenText{
+        color: $green;
+    }
+}

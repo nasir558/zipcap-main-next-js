@@ -1,0 +1,583 @@
+.about {
+    .f-image {
+        max-width: 423px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .details {
+        h2 {
+            font-size: 22px;
+            line-height: 34px;
+            margin-bottom: 33px;
+            color: $black;
+        }
+
+        p {
+            font-size: 14px;
+            color: #9E9E9E;
+            line-height: 24px;
+            margin-bottom: 33px;
+        }
+
+        @media (max-width: $lg) {
+
+            h2,
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    span.float-left {
+        margin-top: 5px;
+    }
+
+    .starIcon {
+        img {
+            height: 16px
+        }
+    }
+
+    .viewIcon {
+        img {
+            height: 14px
+        }
+    }
+
+    .playIcon {
+        img {
+            height: 16px
+        }
+    }
+}
+
+.instructor {
+    padding-top: 89px;
+    padding-bottom: 156px;
+    background-image: url(../public/images/Group-287.png), url(../public/images/Group-288.png),
+        url(../public/images/Ellipse-49.png), url(../public/images/Ellipse-50.png), url(../public/images/Group-420.png),
+        url(../public/images/Ellipse-156.png), url(../public/images/lightGreen-bg.png);
+    background-position: 31% 9.5%, 87% 9.5%, 4.68% 29%, 78.4% 32.46%, 41.25% 86.8%, 6.71% 86.42%, left bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto, auto, auto, auto, 100% 100%;
+
+    h2.designation {
+        font-size: 22px;
+        color: $black;
+    }
+
+    p {
+        color: #212121 !important;
+    }
+
+    .details {
+        h2 {
+            margin-bottom: 8px !important;
+        }
+    }
+}
+
+.courseDetails {
+    background-image: url(../public/images/thin-pink-bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100% 87px;
+    margin-top: -2px;
+    padding-bottom: 151px;
+
+    .borderBottom {
+        border-bottom: thin solid #B4B4B4;
+    }
+
+    .priceSection {
+        background-color: $white;
+        border-radius: 20px;
+        padding-top: 45px;
+
+        .newPrice {
+            font-size: 40px;
+            color: $darkGrey;
+            font-weight: bold;
+        }
+
+        .oldPrice {
+            color: #9D9D9D;
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 7px;
+            text-decoration: line-through;
+        }
+
+        .discount {
+            font-size: 16px;
+            color: #FFC567;
+        }
+
+        .timeLeft {
+            color: #9E9E9E;
+            margin-top: 41px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .wishListBtn {
+            color: $red;
+            font-size: 18px;
+            margin-top: 18px;
+
+            img {
+                margin-left: 5px;
+                width: 20px;
+            }
+        }
+
+        .includes {
+            padding: 34px;
+
+            h3 {
+                color: $darkGrey;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .details-features,
+            .q-team-train {
+                margin-top: 34px;
+
+                p {
+                    color: #9E9E9E;
+                    font-size: 14px;
+                }
+
+                img {
+                    width: 22px;
+                    margin-right: 16px;
+                }
+            }
+
+            .details-features>div.flex {
+                margin-bottom: 19px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .q-team-train {
+                margin-top: 14.5px;
+            }
+        }
+
+        .help {
+            margin-bottom: 0 !important;
+
+            .helpLink {
+                color: $yellow;
+                text-decoration: none;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .details-tabs {
+        padding-top: 200px;
+
+        .react-tabs__tab-panel {
+            padding-top: 60px;
+
+            .overview {
+                .heading {
+                    color: $darkGrey;
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+                .description {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 14px;
+                    color: #8D8D8D;
+                    margin-bottom: 34px;
+                }
+            }
+
+            .curriculam {
+                .c-item {
+                    background-color: $white;
+                    padding: 15px 30px 15px 30px;
+                    border-radius: 8px;
+                    margin-bottom: 30px;
+
+                    .c-image {
+                        border-radius: 5px;
+                        width: 97px;
+                        height: auto;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $darkGrey;
+                    }
+
+                    .tryItBtn {
+                        min-width: 110px;
+                    }
+
+                    .time,
+                    .tryItBtn {
+                        background-color: $darkYellow;
+                        color: $white;
+                        font-size: 14px;
+                        padding: 4px 8px 4px 8px;
+                        border-radius: 5px;
+                        font-weight: 600;
+
+                        img {
+                            margin-right: 5.5px;
+                            float: left;
+                        }
+                    }
+
+                    .tryItBtn {
+                        &:hover {
+                            background-color: $orange;
+                        }
+                    }
+                }
+            }
+
+            .seeMoreBtn {
+                color: #757575;
+                font-weight: 500;
+                font-size: 16px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                background-color: $lightGreen;
+                border-radius: 5px;
+                border: thin solid #707070;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    border-color: $black;
+                }
+            }
+        }
+
+        .FAQs,
+        .reviews {
+            background-color: $white;
+            border-radius: 8px;
+            padding: 34px;
+
+            .accordion {
+                border: none;
+
+                .accordion__item {
+                    .accordion__heading {
+                        .accordion__button {
+                            background-color: $white;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #474747;
+                            padding-left: 0;
+                            padding-right: 0;
+
+                            &::before {
+                                float: right;
+                                border-color: #474747;
+                                transform: rotate(45deg);
+                                height: 14px;
+                                width: 14px;
+                                margin-right: 0;
+                                border-bottom: 3px solid currentColor;
+                                border-right: 3px solid currentColor;
+                            }
+                        }
+                    }
+
+                    .accordion__button[aria-expanded='true']::before,
+                    .accordion__button[aria-selected='true']::before {
+                        transform: rotate(225deg);
+                        margin-top: 9px;
+                    }
+                }
+
+                .FAQsAns {
+                    border-left: 2px solid $red;
+                    padding-left: 12px;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .reviews {
+            .average-rating {
+                border-radius: 8px;
+                background: $pink;
+                padding: 20px;
+
+                .total-value {
+                    font-size: 35px;
+                    color: $darkGrey;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .rating-stars {
+                    img {
+                        width: 12.22px;
+                        height: auto;
+                    }
+                }
+
+                .rating-text {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    color: $darkGrey;
+                }
+            }
+
+            .percentBar>div {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .percentBar {
+
+                .base,
+                .progress {
+                    height: 9px;
+                    border-radius: 1px;
+                }
+
+                .base {
+                    background: #DCDCDC;
+                    width: 270px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    @media (max-width: $md) {
+                        width: 230px;
+                    }
+                }
+
+                .progress {
+                    background-color: $darkYellow;
+                }
+
+                img {
+                    width: 11.13px;
+                    height: auto;
+                }
+
+                .rating-text {
+                    color: $darkGrey;
+                    font-size: 12px;
+                }
+            }
+
+            .feedbacks {
+                padding-top: 34px;
+                padding-bottom: 32px;
+                border-bottom: thin solid #BBBBBB;
+
+                .p-pic {
+                    width: 130px;
+                    height: auto;
+                }
+
+                .title {
+                    font-size: 16px;
+                    color: $darkGrey;
+                    font-weight: 500;
+
+                    .time-elapsed {
+                        color: #878787;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: 4px;
+                    }
+                }
+
+                .rating-stars {
+                    img {
+                        width: 13.13px;
+                        height: 13.13px;
+                    }
+                }
+
+                .feed-message {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $darkGrey;
+                    margin-top: 8px;
+                }
+            }
+
+            .readAll {
+                font-size: 16px;
+                color: #AAAAAA;
+                margin-top: 26px;
+
+                &:hover {
+                    color: $darkYellow;
+                }
+            }
+        }
+    }
+
+}
+
+.feedback {
+    padding-top: 108px;
+    padding-bottom: 163px;
+    background-image: url(../public/images/Group-518.png), url(../public/images/Ellipse-50.png),
+        url(../public/images/Group-288.png), url(../public/images/Ellipse-156.png), url(../public/images/Group-287.png),
+        url(../public/images/Ellipse-156.png), url(../public/images/lightGreen-bg.png);
+    background-position: 13.38% 14.38%, 52.55% 5.96%, 69.94% 7.10%, 14.68% 73.53%, 50.86% 78.65%, 83.43% 73.53%, left bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto, auto, auto, auto, 100% 100%;
+
+    .titleSection {
+        width: 100%;
+        max-width: 270px;
+
+        h3 {
+            font-size: 22px;
+            line-height: 34px;
+            color: $black;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            color: $black;
+            margin-top: 16px;
+        }
+    }
+
+    .feedbackBox {
+        padding: 30px;
+
+        .avatar {
+            border-radius: 100%;
+            width: 92px;
+            height: 92px;
+            margin-right: 15px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: $black;
+        }
+
+        .designation,
+        .feedbackMessage p {
+            font-size: 14px;
+            color: $black;
+            margin-top: 6px;
+        }
+
+        .feedbackMessage {
+            margin-top: 19px;
+        }
+    }
+
+    .slick-list {
+
+        margin: 0 -20px;
+    }
+
+    .slick-slide>div {
+        padding: 0 20px;
+
+        @media (max-width: $xl) {
+            padding: 0 28px;
+        }
+    }
+
+    .slick-dots {
+        display: block !important;
+        text-align: left;
+        bottom: -58px;
+
+        li {
+            button {
+                &::before {
+                    color: #DFE2F2;
+                    font-size: 15px;
+                    opacity: 1
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                &::before {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+.customTabs {
+    .react-tabs {
+        .react-tabs__tab-list {
+            display: flex;
+            justify-content: space-between;
+            border: 0;
+            margin: 0;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+            }
+
+            li.react-tabs__tab {
+                display: inline-flex;
+                background-color: #D4DCEB;
+                border-radius: 12px;
+                font-size: 16px;
+                color: $black;
+                border: none;
+                padding: 17px 23px;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: $darkYellow;
+                    color: $white;
+                }
+
+                @media (max-width: $md) {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            }
+
+            li.react-tabs__tab--selected {
+                background: $darkYellow;
+                color: $white;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "zip-cap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.2.0",
+    "draft-js": "^0.11.7",
+    "heroicons-react": "^1.4.0",
+    "next": "10.2.3",
+    "react-accessible-accordion": "^3.3.4",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-input-range": "^1.3.0",
+    "react-native-cn-richtext-editor": "^1.0.43",
+    "react-player": "^2.9.0",
+    "react-quill": "^1.3.5",
+    "react-rte": "^0.16.3",
+    "react-slick": "^0.28.1",
+    "react-tabs": "^3.2.2",
+    "react-video-js-player": "^1.1.1",
+    "sass": "^1.34.0",
+    "slate": "^0.63.0",
+    "slate-react": "^0.65.2",
+    "slick-carousel": "^1.8.1",
+    "suneditor": "^2.40.0",
+    "suneditor-react": "^3.1.2"
+  },
+  "devDependencies": {
+    "@iconify-icons/heroicons-outline": "^1.1.2",
+    "autoprefixer": "^10.2.6",
+    "jquery": "^3.6.0",
+    "postcss": "^8.3.0",
+    "react": "^17.0.2",
+    "tailwindcss": "^2.1.2"
+  }
+}

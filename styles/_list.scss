@@ -1,0 +1,271 @@
+.ListCourses {
+    background-color: #F3F7FF;
+    padding-top: 67px;
+    padding-bottom: 148px;
+
+    .listDropdown {
+        select {
+            background: none;
+            border: thin solid #ABABAB;
+            border-radius: 7px;
+            padding: 17px 30px 17px 10px;
+            color: $ligtGrey;
+            font-size: 16px;
+            min-width: 183px;
+
+            /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+
+            &::-ms-expand {
+                display: none;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: 10px 30px 10px 10px;
+            }
+
+            outline: none !important;
+        }
+    }
+
+    .totalResult {
+        color: $ligtGrey;
+    }
+
+    .hideBody {
+        h3 {
+            img {
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+
+        .hideContent {
+            display: none !important;
+        }
+    }
+
+    .fitlerForm {
+        background-color: $white;
+        padding-left: 19.5px;
+        padding-right: 19.5px;
+        margin-bottom: 30px;
+
+        .formTItile {
+            color: $ligtGrey;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 500;
+            padding-top: 13px;
+            padding-bottom: 13px;
+
+            img {
+                margin-top: 8px;
+            }
+        }
+
+        .showMore {
+            font-size: 16px;
+            color: $ligtGrey;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .FormElements {
+            padding-top: 35.5px;
+            border-top: thin solid #B4B4B4;
+            color: #7B7B7B;
+            font-size: 14px;
+
+            .form-checkbox {
+                label {
+                    position: relative;
+                    padding-left: 36px;
+
+                    input {
+                        display: none;
+
+                        &:checked+i {
+                            background-image: url(../public/images/checkbox-checked.png);
+                            border: none;
+                        }
+                    }
+
+                    i {
+                        width: 22px;
+                        height: 22px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: -2px;
+                        border-radius: 5px;
+                        background-size: 100% 100%;
+                        background-position: center center;
+                        border: thin solid #707070;
+                        box-sizing: border-box;
+
+                        &:before,
+                        &:after {
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+
+            .price-range {
+                margin-top: 26.5px;
+                margin-bottom: 28px;
+
+                .input-range {
+                    padding-bottom: 60px;
+                    width: 94%;
+
+                    .input-range__label--min,
+                    .input-range__label--max {
+                        top: 1.5rem;
+                        bottom: unset;
+                        font-family: 'Poppins', sans-serif !important;
+                        color: #828899;
+                        font-size: 12px;
+                    }
+
+                    .input-range__track--background {
+                        top: 0;
+                    }
+
+                    .input-range__slider {
+                        background: $red;
+                        border: 1px solid $red;
+                        width: 32px;
+                        height: 32px;
+                        margin-top: -1.2rem;
+                    }
+
+                    .input-range__track--active {
+                        background: #FEF0EF;
+                        height: 8px;
+                    }
+
+                    .input-range__label--value {
+                        color: #828899;
+                        font-size: 12px;
+                        top: -3.5rem;
+                        font-family: 'Poppins', sans-serif !important;
+                        border: thin solid #EBEEF7;
+                        padding: 7px 8px 7px 8px;
+                        border-radius: 5px;
+
+                        .input-range__label-container {
+                            left: 0;
+                        }
+                    }
+
+                    .input-range__track {
+                        height: 8px;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .listFilter {
+        @media (max-width: 1023px) {
+            position: fixed;
+            opacity: 0;
+            width: 100%;
+            left: 0;
+            top: 0;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+
+    }
+
+    .listFilterOpen {
+        @media (max-width: 1023px) {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 99;
+            background-color: white;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+    }
+
+}
+
+.form-checkbox {
+    label {
+        position: relative;
+        padding-left: 36px;
+
+        input {
+            display: none;
+
+            &:checked+i {
+                background-image: url(../public/images/checkbox-checked.png);
+                border: none;
+            }
+        }
+
+        i {
+            width: 22px;
+            height: 22px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -2px;
+            border-radius: 5px;
+            background-size: 100% 100%;
+            background-position: center center;
+            border: thin solid #707070;
+            box-sizing: border-box;
+
+            &:before,
+            &:after {
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin-top: 115px;
+
+    button:not(.more) {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 100px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $ligtGrey;
+        outline: none;
+
+        @media (min-width: $md) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    button.previous,
+    button.next {
+        border: thin solid #7B7B7B;
+    }
+
+    button.active {
+        background-color: $red;
+        color: $white;
+    }
+}
